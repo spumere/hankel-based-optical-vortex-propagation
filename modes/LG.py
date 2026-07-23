@@ -1,7 +1,7 @@
 """
-В. С. Павельев, С. Н. Хонина, В. В. Котляр, Н. Л. Казанский. Управление поперечно-модовым 
-составом когерентного излучения: учебное пособие. Самара : Издательство Самарского государственного 
-аэрокосмического университета, 2007. 192 с. ISBN 978-5-7883-0619-3.
+[1]	Pavelyev VS, Khonina SN, Kotlyar VV, Kazanskiy NL. Control of the 
+transverse mode composition of coherent radiation [In Russian]. Samara: 
+Samara State Aerospace University Publishing House; 2007. ISBN 978-5-7883-0619-3.
 """
 
 import numpy as np

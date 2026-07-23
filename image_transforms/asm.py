@@ -1,7 +1,7 @@
 """
-[1] Салех Б., Тейх М. Оптика и фотоника. Принципы и применения: Учебное пособие. 
-Долгопрудный: Издательский Дом «Интеллект»; 2012. 
-[2] Дж. Гудмен. Введение в фурье-оптику. Москва: Мир; 1970.
+[1] Saleh B, Teich M. Optics and Photonics: Principles and Applications. 
+Vol. 1 [In Russian]. Dolgoprudny: Intellekt; 2012. ISBN: 978-5-91559-038-9.
+[2] Goodman J. Introduction to Fourier Optics [In Russian]. Moscow: Mir; 1970. 
 """
 
 import numpy as np

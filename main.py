@@ -44,8 +44,8 @@ class Laguerre_Gaussian_Exact:
             (1 / sigma_z) * A_nm *
             # [ (√2ρ/σ(z))^|m| × L_n^|m| × exp(-ρ²/σ(z)²) ]
             ((np.sqrt(2) * r / sigma_z) ** abs(self.m)) * L_mn * np.exp(-r**2 / sigma_z**2) *
-            # exp(-i k ρ² z / [2(z² + z₀²)])
-            np.exp(-1j * self.k * r**2 * z / (2 * (z**2 + z_0**2))) *
+            # exp(-i k ρ² z / [2(z² + z₀²)]) * exp(- i k z)
+            np.exp(-1j * self.k * r**2 * z / (2 * (z**2 + z_0**2))) * np.exp(- 1j* self.k * z) *
             # exp[i(|m| + 2n + 1)ζ(z)]
             np.exp(1j * (abs(self.m) + 2 * self.n + 1) * zeta_z) *
             # exp(imφ)
