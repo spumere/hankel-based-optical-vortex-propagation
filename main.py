@@ -65,11 +65,11 @@ def correlation(w, psi):
 
 # Параметры численного эксперимента
 N = 1024
-L = 0.03
+L = 0.02
 wavelength = 1550e-9 
 sigma_0 = 0.001
 z = 5
-n, m = 0, 1
+n, m = 0, 5
 
 exact_beam = Laguerre_Gaussian_Exact(N, L, sigma_0, n, m, wavelength, z)
 for_simulation_beam = Laguerre_Gaussian(N, L, sigma_0, n, m) 
@@ -80,7 +80,7 @@ end_fourier = time.perf_counter()
 time_fourier = end_fourier - start_fourier
 
 r = np.linspace(0, L * np.sqrt(2)/2, (N - 1)//2 + 1, endpoint=True)
-transformer = HankelTransform(order=1, radial_grid=r)
+transformer = HankelTransform(order=m, radial_grid=r)
 start_hankel = time.perf_counter()
 propagated_by_hankel = hasm(for_simulation_beam, wavelength, z, transformer)
 end_hankel = time.perf_counter()
